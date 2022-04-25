@@ -181,7 +181,7 @@ func (g client) getPanelURL(p Panel, dashName string, t TimeRange) string {
 		} else if p.Is(Text) {
 			values.Add("width", "1000")
 			values.Add("height", "100")
-		} else if p.Is(piechart) {
+		} else if p.Is(PieChart) {
 			values.Add("width", "160")
 			values.Add("height", "160")
 		} else {
